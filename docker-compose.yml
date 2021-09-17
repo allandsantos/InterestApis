@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  interestcalculator.api:
+    image: ${DOCKER_REGISTRY-}interestcalculatorapi
+    build:
+      context: .
+      dockerfile: src/InterestCalculatorApi/Dockerfile
+
+  interestrate.api:
+    image: ${DOCKER_REGISTRY-}interestrateapi
+    build:
+      context: .
+      dockerfile: src/InterestRateApi/Dockerfile
+

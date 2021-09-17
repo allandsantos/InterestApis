@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  interestcalculator.api:
+    container_name: "interestcalculator.api"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "8100:80"
+
+  interestrate.api:
+    container_name: "interestrate.api"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "8101:80"
+
